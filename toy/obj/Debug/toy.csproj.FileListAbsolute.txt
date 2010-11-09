@@ -1,0 +1,7 @@
+C:\projects\toy\toy\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\toy\toy\bin\Debug\toy.dll
+C:\projects\toy\toy\bin\Debug\toy.pdb
+C:\projects\toy\toy\bin\Debug\Moq.dll
+C:\projects\toy\toy\bin\Debug\nunit.framework.dll
+C:\projects\toy\toy\obj\Debug\toy.dll
+C:\projects\toy\toy\obj\Debug\toy.pdb
