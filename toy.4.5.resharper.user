@@ -21,8 +21,8 @@
       <Item value="FileFinder" priority="2" />
       <Item value="var" priority="5" />
       <Item value="Assert" priority="7" />
-      <Item value="Is" priority="8" />
-      <Item value="Has" priority="4" />
+      <Item value="Is" priority="10" />
+      <Item value="Has" priority="7" />
       <Item value="dlls" priority="2" />
       <Item value="Console" priority="0" />
       <Item value="referencedAssembly" priority="0" />
@@ -118,15 +118,17 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Has">
       <Item value="Count" priority="0" />
-      <Item value="All" priority="2" />
-      <Item value="Some" priority="0" />
+      <Item value="All" priority="5" />
+      <Item value="Some" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NUnit.Framework.Constraints.ResolvableConstraintExpression">
       <Item value="GreaterThan" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NUnit.Framework.Constraints.ConstraintExpression">
-      <Item value="Member" priority="1" />
+      <Item value="Member" priority="2" />
       <Item value="StringEnding" priority="0" />
+      <Item value="Contains" priority="0" />
+      <Item value="SubsetOf" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Console">
       <Item value="WriteLine" priority="1" />
@@ -136,8 +138,9 @@
       <Item value="WriteLine" priority="8" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Is">
-      <Item value="EqualTo" priority="2" />
+      <Item value="EqualTo" priority="3" />
       <Item value="False" priority="0" />
+      <Item value="SubsetOf" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
       <Item value="ToString" priority="1" />
@@ -179,7 +182,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:toy.Azzembly">
       <Item value="HasDependencies" priority="1" />
-      <Item value="Name" priority="1" />
+      <Item value="Name" priority="2" />
       <Item value="dependencies" priority="1" />
       <Item value="Dependencies" priority="3" />
       <Item value="name" priority="0" />
@@ -222,8 +225,6 @@
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AssemblyTests.cs" caret="281" fromTop="9" />
-      <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:RandomTests.cs" caret="1329" fromTop="23" />
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:DigraphContaining.cs" caret="711" fromTop="17" />
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:DotRenderer.cs" caret="374" fromTop="12" />
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:Azzembly.cs" caret="1354" fromTop="20" />
@@ -233,6 +234,8 @@
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyFinder.cs" caret="601" fromTop="16" />
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:FileFinder.cs" caret="154" fromTop="7" />
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyFinderTest.cs" caret="330" fromTop="12" />
+      <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:RandomTests.cs" caret="13" fromTop="0" />
+      <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyCreatorTest.cs" caret="332" fromTop="12" />
     </RecentFiles>
     <RecentEdits>
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:DotRenderer.cs" caret="271" fromTop="8" />
@@ -260,6 +263,9 @@
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyFinder.cs" caret="601" fromTop="16" />
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyFinderTest.cs" caret="443" fromTop="16" />
       <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyFinderTest.cs" caret="332" fromTop="12" />
+      <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyCreatorTest.cs" caret="1019" fromTop="24" />
+      <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyCreatorTest.cs" caret="812" fromTop="24" />
+      <File id="B1BE4ADB-97FE-498D-8712-266DD299A5CF/f:AzzemblyCreatorTest.cs" caret="332" fromTop="12" />
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>

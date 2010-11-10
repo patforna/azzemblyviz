@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using NUnit.Framework;
 
 namespace toy
@@ -10,7 +11,11 @@ namespace toy
         public void ShouldProduceDotOutput()
         {
             var path = string.Join("/", new[] {Directory.GetCurrentDirectory()});
-            Assert.That(App().ProduceDotFrom(path), DigraphContaining("toy -> nunit.framework"));
+            var output = App().ProduceDotFrom(path);
+            Assert.That(output, DigraphContaining("toy -> nunit.framework"));
+            Assert.That(output, DigraphContaining("toy -> Moq"));
+
+            Console.WriteLine(output);
         }
 
         private App App()
