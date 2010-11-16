@@ -10,9 +10,14 @@ namespace toy
     {
         private readonly string expectedLine;
 
-        public DigraphContaining(string expectedLine)
+        public DigraphContaining(params string[] nodes)
         {
-            this.expectedLine = expectedLine;
+            this.expectedLine = string.Join(" -> ", nodes.Select(x => WrapInQuotes(x)).ToArray());
+        }
+
+        private string WrapInQuotes(string s)
+        {
+            return "\"" + s + "\"";
         }
 
         public override bool Matches(object actual)

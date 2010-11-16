@@ -12,8 +12,8 @@ namespace toy
         {
             var path = string.Join("/", new[] {Directory.GetCurrentDirectory()});
             var output = App().ProduceDotFrom(path);
-            Assert.That(output, DigraphContaining("\"nunit.framework\" -> \"mscorlib\""));
-            Assert.That(output, DigraphContaining("\"nunit.framework\" -> \"System.Xml\""));
+            Assert.That(output, DigraphContaining("nunit.framework", "mscorlib"));
+            Assert.That(output, DigraphContaining("nunit.framework", "System.Xml"));
 
             Console.WriteLine(output);
         }
@@ -23,9 +23,9 @@ namespace toy
             return new App(new AzzemblyFinder(new FileFinder(), new AzzemblyCreator()), new DotRenderer());
         }
 
-        private static DigraphContaining DigraphContaining(string line)
+        private static DigraphContaining DigraphContaining(params string[] nodes)
         {
-            return new DigraphContaining(line);
+            return new DigraphContaining(nodes);
         }
     }
 }

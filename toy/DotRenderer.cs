@@ -49,12 +49,17 @@ namespace toy
 
         private string NodeOnlyFor(Azzembly azzembly)
         {
-            return azzembly.Name;
+            return WrapInQuotes(azzembly.Name);
         }
 
         private string NodeAndEdgeFor(Azzembly azzembly, Azzembly dependency)
         {
-            return string.Format("{0} -> {1}", azzembly.Name, dependency.Name);
+            return string.Format("{0} -> {1}", WrapInQuotes(azzembly.Name), WrapInQuotes(dependency.Name));
+        }
+
+        private string WrapInQuotes(string name)
+        {
+            return "\"" + name + "\"";
         }
 
         private void End()
