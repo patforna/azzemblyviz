@@ -1,7 +1,0 @@
-c:\projects\toy\toy\bin\Release\toy.dll
-c:\projects\toy\toy\bin\Release\toy.pdb
-c:\projects\toy\toy\bin\Release\Moq.dll
-c:\projects\toy\toy\bin\Release\nunit.framework.dll
-c:\projects\toy\toy\obj\Release\ResolveAssemblyReference.cache
-c:\projects\toy\toy\obj\Release\toy.dll
-c:\projects\toy\toy\obj\Release\toy.pdb
