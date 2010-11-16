@@ -20,7 +20,7 @@ namespace toy
 
         private App App()
         {
-            return new App(new AzzemblyFinder(new FileFinder(), new AzzemblyCreator()), new DotRenderer());
+            return new App(new AzzemblyService(new AzzemblyFinder(new FileFinder(), new AzzemblyCreator())), new DotRenderer());
         }
 
         private static DigraphContaining DigraphContaining(params string[] nodes)

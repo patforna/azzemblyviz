@@ -62,6 +62,8 @@
     <Compile Include="AzzemblyCreatorTest.cs" />
     <Compile Include="AzzemblyFinder.cs" />
     <Compile Include="AzzemblyFinderTest.cs" />
+    <Compile Include="AzzemblyService.cs" />
+    <Compile Include="AzzemblyServiceTest.cs" />
     <Compile Include="EndToEndTest.cs" />
     <Compile Include="Azzembly.cs" />
     <Compile Include="AzzemblyTest.cs" />
