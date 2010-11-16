@@ -34,7 +34,7 @@ namespace toy
         }
 
         [Test]
-        public void ShouldBeAbleToVerifyAnonymousTypeParameter()
+        public void ShouldBeAbleToVerifyAnonymousTypeParameterUsingCustomMatcher()
         {
             var mock = new Mock<IList>();
             var list = mock.Object;
