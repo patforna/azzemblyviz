@@ -5,3 +5,10 @@ C:\projects\toy\toy\bin\Debug\Moq.dll
 C:\projects\toy\toy\bin\Debug\nunit.framework.dll
 C:\projects\toy\toy\obj\Debug\toy.dll
 C:\projects\toy\toy\obj\Debug\toy.pdb
+C:\software\git\projects\azzemblyviz\toy\bin\Debug\toy.pdb
+C:\software\git\projects\azzemblyviz\toy\bin\Debug\Moq.dll
+C:\software\git\projects\azzemblyviz\toy\bin\Debug\nunit.framework.dll
+C:\software\git\projects\azzemblyviz\toy\obj\Debug\ResolveAssemblyReference.cache
+C:\software\git\projects\azzemblyviz\toy\obj\Debug\toy.pdb
+C:\software\git\projects\azzemblyviz\toy\bin\Debug\toy.exe
+C:\software\git\projects\azzemblyviz\toy\obj\Debug\toy.exe

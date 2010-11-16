@@ -1,6 +1,7 @@
-﻿using System.Reflection;
-using NUnit.Framework;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using NUnit.Framework;
 
 namespace toy
 {
@@ -12,19 +13,19 @@ namespace toy
         private readonly AzzemblyCreator azzemblyCreator = new AzzemblyCreator();
 
         [Test]
-        public void ShouldPopulateName()
+        public void ShouldPopulateNameUsingSimpleName()
         {
-            var azzembly = azzemblyCreator.FromFile(WRAPPED_ASSEMBLY.Location);
-            Assert.That(azzembly.Name, Is.EqualTo(WRAPPED_ASSEMBLY.FullName));
+            Azzembly azzembly = azzemblyCreator.FromFile(WRAPPED_ASSEMBLY.Location);
+            Assert.That(azzembly.Name, Is.EqualTo(WRAPPED_ASSEMBLY.GetName().Name));
         }
 
         [Test]
-        public void ShouldPopulateDependencies()
+        public void ShouldPopulateDependenciesUsingSimpleNameOfReferencedAssemblies()
         {
-            var azzembly = azzemblyCreator.FromFile(WRAPPED_ASSEMBLY.Location);
-            var dependencies = WRAPPED_ASSEMBLY.GetReferencedAssemblies().Select(a => a.FullName);
+            Azzembly azzembly = azzemblyCreator.FromFile(WRAPPED_ASSEMBLY.Location);
+            IEnumerable<string> dependencyNames = WRAPPED_ASSEMBLY.GetReferencedAssemblies().Select(a => a.Name);
 
-            Assert.That(azzembly.Dependencies, Is.EqualTo(dependencies));
+            Assert.That(azzembly.Dependencies.Select(d => d.Name), Is.EqualTo(dependencyNames));
         }
     }
 }
