@@ -12,8 +12,8 @@ namespace toy
         {
             var path = string.Join("/", new[] {Directory.GetCurrentDirectory()});
             var output = App().ProduceDotFrom(path);
-            Assert.That(output, DigraphContaining("toy -> nunit.framework"));
-            Assert.That(output, DigraphContaining("toy -> Moq"));
+            Assert.That(output, DigraphContaining("\"nunit.framework\" -> \"mscorlib\""));
+            Assert.That(output, DigraphContaining("\"nunit.framework\" -> \"System.Xml\""));
 
             Console.WriteLine(output);
         }
